@@ -1,7 +1,9 @@
 package com.ui.kason_zhang.receivefromotherapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.ParcelFileDescriptor;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -11,6 +13,12 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import android.support.v7.widget.ShareActionProvider;
+import android.widget.Toast;
+
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -20,12 +28,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i(TAG, "onCreate: come in--------------");
         textView = (TextView)findViewById(R.id.text);
         Intent intent = getIntent();
         String action = intent.getAction();
         String type = intent.getType();
         if(intent!=null){
-            if(Intent.ACTION_SEND.equals(action)&&"text/plain".equals(type)){
+            Log.i(TAG, "onCreate: -----yes");
+            if(Intent.ACTION_SEND.equals(action)){
                 handleText(intent);
             }
         }
@@ -63,8 +73,38 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void handleText(Intent intent) {
-        String result = intent.getStringExtra(Intent.EXTRA_TEXT);
-        textView.setText(result);
-        Log.i(TAG, "handleText: result:"+result);
+        Log.i(TAG, "handleText: come to the hangleText");
+        final Uri returnUri = intent.getData();
+        Bundle extras = intent.getExtras();
+        String str = intent.getStringExtra(Intent.EXTRA_TEXT);
+        textView.setText(str);
+        //extras.
+        if(returnUri != null) {
+            Toast.makeText(MainActivity.this,"it is not null,hehehe",Toast.LENGTH_LONG).show();
+            Log.i(TAG, "handleText: returnUri is not null");
+            try {
+                ParcelFileDescriptor r = getContentResolver().openFileDescriptor(returnUri, "r");
+                FileDescriptor fd = r.getFileDescriptor();
+                FileInputStream fileInputStream = new FileInputStream(fd);
+                byte[] buffer = new byte[1024];
+                int read = 0;
+                try {
+                    while((read = fileInputStream.read(buffer))!= -1) {
+                        String text = new String(buffer,0,read);
+                        Log.i(TAG, "onActivityResult: the text:"+text);
+                        textView.setText(text);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }else{
+            Toast.makeText(MainActivity.this,"it is null",Toast.LENGTH_LONG).show();
+        }
+        //String result = intent.getStringExtra(Intent.EXTRA_TEXT);
+        //textView.setText(result);
+        //Log.i(TAG, "handleText: result:"+result);
     }
 }

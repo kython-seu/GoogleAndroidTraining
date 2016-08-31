@@ -73,6 +73,7 @@ public class FileSelectActivity extends AppCompatActivity {
                     uriForFile = FileProvider.getUriForFile(FileSelectActivity.this,
                             "com.ui.kason_zhang.sharefiles.fileprovider",
                             requestFile);
+                    //uriForFile.
                 } catch (IllegalArgumentException e) {
                     Log.e("File Selector",
                             "The selected file can't be shared: " +

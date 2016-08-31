@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharefiles/sharefiles.iml" filepath="$PROJECT_DIR$/sharefiles/sharefiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" filepath="$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" />
     </modules>
   </component>
 </project>

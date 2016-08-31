@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 case REQUESTFILE:
                     // Get the file's content URI from the incoming Intent
                     Uri returnUri = returnIntent.getData();
+                    Log.i(TAG, "onActivityResult: Uri--->"+returnUri.toString());
                     /*
                      * Try to open the file for "read" access using the
                      * returned URI. If the file isn't found, write to the

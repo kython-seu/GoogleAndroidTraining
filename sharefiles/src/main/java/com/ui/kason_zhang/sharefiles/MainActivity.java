@@ -4,6 +4,8 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+    }
+
+    private void storeFiles() {
         File dirfile = new File(MainActivity.this.getFilesDir(),"files");
         if(!dirfile.exists()){
             dirfile.mkdirs();
@@ -51,5 +57,24 @@ public class MainActivity extends AppCompatActivity {
         intent.setComponent(new ComponentName("com.ui.kason_zhang.sharefiles",
                 "com.ui.kason_zhang.sharefiles.FileSelectActivity"));
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        menu.add(1,100,1,"storeFiles");
+        menu.add(1,101,2,"sendsimpledata");
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case 100:
+                storeFiles();
+                break;
+        }
+        return true;
     }
 }

@@ -1,1 +1,1 @@
-include ':app', ':receivefromotherapp'
+include ':app', ':receivefromotherapp', ':sharefiles', ':sharefilesclient'
