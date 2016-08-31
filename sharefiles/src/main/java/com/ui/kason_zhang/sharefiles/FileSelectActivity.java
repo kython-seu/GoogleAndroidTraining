@@ -62,7 +62,7 @@ public class FileSelectActivity extends AppCompatActivity {
                  * Assume that the file names are in the
                  * mList array.
                  */
-                File requestFile = new File(fileNameList.get(postion));
+                File requestFile = new File(mNormalFileDir,fileNameList.get(postion));
                 /*
                  * Most file-related method calls need to be in
                  * try-catch blocks.
@@ -70,7 +70,8 @@ public class FileSelectActivity extends AppCompatActivity {
                 // Use the FileProvider to get a content URI
                 Uri uriForFile = null;
                 try {
-                    uriForFile = FileProvider.getUriForFile(FileSelectActivity.this, "com.ui.kason_zhang.sharefiles.fileprovider",
+                    uriForFile = FileProvider.getUriForFile(FileSelectActivity.this,
+                            "com.ui.kason_zhang.sharefiles.fileprovider",
                             requestFile);
                 } catch (IllegalArgumentException e) {
                     Log.e("File Selector",
@@ -85,14 +86,17 @@ public class FileSelectActivity extends AppCompatActivity {
                     mResultIntent.setDataAndType(
                             uriForFile,
                             getContentResolver().getType(uriForFile));
+                    Log.i(TAG, "onClickListener: "+getContentResolver().getType(uriForFile));
                     // Set the result
                     FileSelectActivity.this.setResult(Activity.RESULT_OK,
                             mResultIntent);
+
                 } else {
                     mResultIntent.setDataAndType(null, "");
                     FileSelectActivity.this.setResult(RESULT_CANCELED,
                             mResultIntent);
                 }
+                FileSelectActivity.this.finish();
             }
 
             @Override
@@ -119,7 +123,7 @@ public class FileSelectActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate: mNormalFiles--->"+mNormalfiles.length);
 
         for(File file : mNormalfiles){
-            Log.i(TAG, "initData: filename-->"+file.getName());
+            Log.i(TAG, "initData: filename-->"+file.getAbsolutePath());
             fileNameList.add(file.getName());
         }
     }

@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<10;i++){
             String filename= "file"+i+".txt";
             try {
-                mFileOutputStream = new FileOutputStream(new File(dirfile,filename));
-                mFileOutputStream.write("Hello.World".getBytes());
+                File file = new File(dirfile,filename);
+                mFileOutputStream = new FileOutputStream(file);
+                mFileOutputStream.write(("I am file "+i).getBytes());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -46,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("com.ui.kason_zhang.sharefiles",
                 "com.ui.kason_zhang.sharefiles.FileSelectActivity"));
