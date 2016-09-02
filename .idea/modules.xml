@@ -3,16 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/navigation/navigation.iml" filepath="$PROJECT_DIR$/navigation/navigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multimedia/multimedia.iml" filepath="$PROJECT_DIR$/multimedia/multimedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" filepath="$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sharefiles/sharefiles.iml" filepath="$PROJECT_DIR$/sharefiles/sharefiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" filepath="$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/savingdata/savingdata.iml" filepath="$PROJECT_DIR$/savingdata/savingdata.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharefiles/sharefiles.iml" filepath="$PROJECT_DIR$/sharefiles/sharefiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" filepath="$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" filepath="$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagedot/viewpagedot.iml" filepath="$PROJECT_DIR$/viewpagedot/viewpagedot.iml" />
     </modules>
   </component>
 </project>
