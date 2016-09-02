@@ -1,7 +1,9 @@
 package com.ui.kason_zhang.savingdata;
 
+import android.content.ComponentName;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -157,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
     private void getAllData(){
         SQLiteDatabase readableDatabase = myDbOpenHelper.getReadableDatabase();
@@ -315,6 +318,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuItem menuItem = menu.add(1,100,1,"ContentProvider");
         return true;
     }
 
@@ -329,7 +333,14 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
+        switch (item.getItemId()){
+            case 100:
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName("com.ui.kason_zhang.savingdata",
+                        "com.ui.kason_zhang.savingdata.ContentProviderActivity"));
+                startActivity(intent);
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }
