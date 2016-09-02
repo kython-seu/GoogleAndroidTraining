@@ -1,6 +1,7 @@
 package com.ui.kason.api;
 
 import com.ui.kason.entity.GitResult;
+import com.ui.kason.entity.UserMessage;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -23,4 +24,7 @@ public interface GitApiInterface {
 
     @PUT("/user/{id}/update")
     Call<GitResult.ItemsBean> updateUser(@Path("id") String id , @Body GitResult.ItemsBean user);
+
+    @GET("/users/{user}")
+    Call<UserMessage> getUserMessage(@Path("user") String user);
 }
