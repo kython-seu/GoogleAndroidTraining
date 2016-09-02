@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/multimedia/multimedia.iml" filepath="$PROJECT_DIR$/multimedia/multimedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mynavigation/mynavigation.iml" filepath="$PROJECT_DIR$/mynavigation/mynavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" filepath="$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" filepath="$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" />

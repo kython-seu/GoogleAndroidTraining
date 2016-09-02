@@ -1,1 +1,1 @@
-include ':app', ':receivefromotherapp', ':sharefiles', ':sharefilesclient', ':multimedia', ':savingdata', ':viewpagedot', ':okhttpdemo', ':retrofitdemo'
+include ':app', ':receivefromotherapp', ':sharefiles', ':sharefilesclient', ':multimedia', ':savingdata', ':viewpagedot', ':okhttpdemo', ':retrofitdemo', ':mynavigation'
