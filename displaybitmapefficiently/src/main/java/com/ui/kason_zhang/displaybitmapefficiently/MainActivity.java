@@ -1,5 +1,6 @@
 package com.ui.kason_zhang.displaybitmapefficiently;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -22,9 +23,15 @@ public class MainActivity extends AppCompatActivity {
         imageView = (ImageView)findViewById(R.id.myImage);
 
 
-        getImageByTargetSize();
+        //getImageByTargetSize();
+        //BitMapWorkTask bitMapWorkTask = new BitMapWorkTask()
+        int resId= R.drawable.flower;
+        loadBitmap(resId,MainActivity.this,imageView);
     }
-
+    public void loadBitmap(int resId, Activity activity,ImageView imageView) {
+        BitMapWorkTask bitMapWorkTask = new BitMapWorkTask(activity,imageView);
+        bitMapWorkTask.execute(resId);
+    }
     private void getImageByTargetSize() {
         BitmapFactory.Options mOptions = new BitmapFactory.Options();
         mOptions.inJustDecodeBounds = true;//set the image not into the internal memory;

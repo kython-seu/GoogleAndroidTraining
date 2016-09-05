@@ -1,1 +1,1 @@
-include ':app', ':receivefromotherapp', ':sharefiles', ':sharefilesclient', ':multimedia', ':savingdata', ':viewpagedot', ':okhttpdemo', ':retrofitdemo', ':mynavigation', ':okhttpntlm'
+include ':app', ':receivefromotherapp', ':sharefiles', ':sharefilesclient', ':multimedia', ':savingdata', ':viewpagedot', ':okhttpdemo', ':retrofitdemo', ':mynavigation', ':okhttpntlm', ':displaybitmapefficiently', ':databasedemo', ':customcontentproviderdemo'

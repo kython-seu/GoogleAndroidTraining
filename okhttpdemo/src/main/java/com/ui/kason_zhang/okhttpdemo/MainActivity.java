@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         menu.add(1,100,1,"okHttpGet");
         menu.add(1,101,1,"okHttpPost");
+        menu.add(1,102,1,"okHttpNTLM");
         return true;
     }
 
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             case 101:
                 okHttpPost();
                 break;
+
         }
         return super.onOptionsItemSelected(item);
     }
