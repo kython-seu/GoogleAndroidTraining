@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" filepath="$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" filepath="$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/databasedemo/databasedemo.iml" filepath="$PROJECT_DIR$/databasedemo/databasedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" filepath="$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" />
       <module fileurl="file://$PROJECT_DIR$/multimedia/multimedia.iml" filepath="$PROJECT_DIR$/multimedia/multimedia.iml" />
