@@ -15,7 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.myself.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="myCategory" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="com.myself.action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="myCategory"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

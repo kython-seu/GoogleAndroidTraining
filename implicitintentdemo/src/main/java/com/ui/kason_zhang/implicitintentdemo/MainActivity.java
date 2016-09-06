@@ -1,9 +1,8 @@
 package com.ui.kason_zhang.implicitintentdemo;
 
-import android.content.ComponentName;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,9 +18,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                ComponentName componentName = new ComponentName("com.ui.kason_zhang.implicitintentdemo"
+               /* ComponentName componentName = new ComponentName("com.ui.kason_zhang.implicitintentdemo"
                 ,"com.ui.kason_zhang.implicitintentdemo.SecondActivity");
                 intent.setComponent(componentName);
+                startActivity(intent);*/
+                intent.setAction("com.myself.action");
+                intent.addCategory("myCategory");
                 startActivity(intent);
             }
         });
