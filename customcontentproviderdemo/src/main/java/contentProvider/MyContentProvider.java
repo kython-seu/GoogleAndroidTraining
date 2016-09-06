@@ -15,14 +15,14 @@ import database.MyDbOpenHelper;
  */
 public class MyContentProvider extends ContentProvider {
     private static final int BookAll = 1;
-    private static final int BookOneByOne = 2;
+    private static final int BookByIndex = 2;
     private MyDbOpenHelper myDbOpenHelper;
     private static UriMatcher uriMatcher;
     private static final String AUTHORITY = "com.ui.kason_zhang.customcontentproviderdemo.provider";
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
         uriMatcher.addURI(AUTHORITY,"book",BookAll);
-        uriMatcher.addURI(AUTHORITY,"book/#",BookOneByOne);
+        uriMatcher.addURI(AUTHORITY,"book/#",BookByIndex);
     }
     @Override
     public boolean onCreate() {
@@ -42,7 +42,7 @@ public class MyContentProvider extends ContentProvider {
                 cursor = readableDatabase.query("Book"
                         , projection, selection, selectionArgs, null, null, sortOrder);
                 break;
-            case BookOneByOne:
+            case BookByIndex:
                 String bookid = uri.getPathSegments().get(1);
                 cursor = readableDatabase.query("Book"
                         , projection, "id = ?", new String[]{bookid}, null, null, sortOrder);
@@ -60,7 +60,7 @@ public class MyContentProvider extends ContentProvider {
                 return "vnd.android.cursor.dir/vnd.com.ui.kason_zhang." +
                         "customcontentproviderdemo.provider" +
                         ".book";
-            case BookOneByOne:
+            case BookByIndex:
                 return "vnd.android.cursor.item/vnd.com.ui.kason_zhang." +
                         "customcontentproviderdemo.provider" +
                         ".book";
@@ -76,7 +76,7 @@ public class MyContentProvider extends ContentProvider {
         switch (uriMatcher.match(uri)){
             case BookAll:
 
-            case BookOneByOne:
+            case BookByIndex:
                 long bookid = writableDatabase.insert("Book", null, values);
                 uri_ = uri.parse("content" + "//" + AUTHORITY + "/book/" + bookid);
                 break;
@@ -93,7 +93,7 @@ public class MyContentProvider extends ContentProvider {
             case BookAll:
                 bookRows = writableDatabase.delete("Book", selection, selectionArgs);
                 break;
-            case BookOneByOne:
+            case BookByIndex:
                 String s = uri.getPathSegments().get(0);
                 bookRows = writableDatabase.delete("Book", "id = ?", new String[]{s});
                 break;
@@ -109,7 +109,7 @@ public class MyContentProvider extends ContentProvider {
             case BookAll:
                 bookRows = writableDatabase.update("Book",values,selection,selectionArgs);
                 break;
-            case BookOneByOne:
+            case BookByIndex:
                 String s = uri.getPathSegments().get(0);
                 bookRows = writableDatabase.update("Book", values, "id = ?", new String[]{s});
         }
