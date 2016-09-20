@@ -59,7 +59,9 @@ public class MyDatabaseUtil {
         Cursor cursor = writableDatabase.query("Book", null, null, null, null, null, null);
         while(cursor.moveToNext()){
             String name = cursor.getString(cursor.getColumnIndex("name"));
-            Log.i(TAG, "query: name: "+name);
+            int _id = cursor.getInt(cursor.getColumnIndex("_id"));
+            int age = cursor.getInt(cursor.getColumnIndex("age"));
+            Log.i(TAG, "query: name: "+name+" id: "+_id+" age: "+age);
         }
         cursor.close();
     }
