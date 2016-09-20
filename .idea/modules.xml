@@ -7,9 +7,15 @@
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" filepath="$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" filepath="$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/databasedemo/databasedemo.iml" filepath="$PROJECT_DIR$/databasedemo/databasedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deleteapplicationdemo/deleteapplicationdemo.iml" filepath="$PROJECT_DIR$/deleteapplicationdemo/deleteapplicationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" filepath="$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" />
+      <module fileurl="file://$PROJECT_DIR$/implicitintentdemo/implicitintentdemo.iml" filepath="$PROJECT_DIR$/implicitintentdemo/implicitintentdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layoutinflaterdemo/layoutinflaterdemo.iml" filepath="$PROJECT_DIR$/layoutinflaterdemo/layoutinflaterdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loadermanagerdemo/loadermanagerdemo.iml" filepath="$PROJECT_DIR$/loadermanagerdemo/loadermanagerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/locationandmaps/locationandmaps.iml" filepath="$PROJECT_DIR$/locationandmaps/locationandmaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/multimedia/multimedia.iml" filepath="$PROJECT_DIR$/multimedia/multimedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/mynavigation/mynavigation.iml" filepath="$PROJECT_DIR$/mynavigation/mynavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notifytheuser/notifytheuser.iml" filepath="$PROJECT_DIR$/notifytheuser/notifytheuser.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" filepath="$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpntlm/okhttpntlm.iml" filepath="$PROJECT_DIR$/okhttpntlm/okhttpntlm.iml" />
       <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
