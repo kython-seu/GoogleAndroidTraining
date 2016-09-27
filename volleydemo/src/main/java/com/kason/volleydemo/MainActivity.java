@@ -11,7 +11,9 @@ import android.widget.ImageView;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.ImageRequest;
+import com.android.volley.toolbox.NetworkImageView;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -19,8 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button;
     private Button button2;
+    private Button button3;
     private ImageView imageView;
     private static final String TAG = "MainActivity";
+    ImageLoader mImageLoader;
+    NetworkImageView mNetworkImageView;
+    private static final String IMAGE_URL =
+            "http://developer.android.com/images/training/system-ui.png";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,5 +72,17 @@ public class MainActivity extends AppCompatActivity {
                 requestQueue.add(imageRequest);
             }
         });
+        mImageLoader = new ImageLoader(requestQueue
+                ,new LruBitmapCache(LruBitmapCache.getCacheSize(this)));
+        mNetworkImageView = (NetworkImageView)findViewById(R.id.networkImageView);
+        button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mNetworkImageView.setImageUrl(IMAGE_URL,mImageLoader);
+            }
+        });
+
+
     }
 }
