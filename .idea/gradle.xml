@@ -10,54 +10,36 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/asynctaskdemo" />
             <option value="$PROJECT_DIR$/customcontentproviderdemo" />
             <option value="$PROJECT_DIR$/customcontentproviderdemoclient" />
             <option value="$PROJECT_DIR$/databasedemo" />
             <option value="$PROJECT_DIR$/deleteapplicationdemo" />
+            <option value="$PROJECT_DIR$/devicepolicymanagerdemo" />
             <option value="$PROJECT_DIR$/displaybitmapefficiently" />
+            <option value="$PROJECT_DIR$/handlerthreadvshandler" />
             <option value="$PROJECT_DIR$/implicitintentdemo" />
             <option value="$PROJECT_DIR$/layoutinflaterdemo" />
             <option value="$PROJECT_DIR$/loadermanagerdemo" />
             <option value="$PROJECT_DIR$/locationandmaps" />
+            <option value="$PROJECT_DIR$/lrucachedemo" />
             <option value="$PROJECT_DIR$/multimedia" />
             <option value="$PROJECT_DIR$/mynavigation" />
             <option value="$PROJECT_DIR$/notifytheuser" />
             <option value="$PROJECT_DIR$/okhttpdemo" />
             <option value="$PROJECT_DIR$/okhttpntlm" />
             <option value="$PROJECT_DIR$/receivefromotherapp" />
+            <option value="$PROJECT_DIR$/recyclerviewdemo" />
             <option value="$PROJECT_DIR$/retrofitdemo" />
             <option value="$PROJECT_DIR$/savingdata" />
             <option value="$PROJECT_DIR$/sharefiles" />
             <option value="$PROJECT_DIR$/sharefilesclient" />
+            <option value="$PROJECT_DIR$/tablayoutdemo" />
             <option value="$PROJECT_DIR$/viewpagedot" />
+            <option value="$PROJECT_DIR$/volleydemo" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/customcontentproviderdemo" />
-            <option value="$PROJECT_DIR$/customcontentproviderdemoclient" />
-            <option value="$PROJECT_DIR$/databasedemo" />
-            <option value="$PROJECT_DIR$/deleteapplicationdemo" />
-            <option value="$PROJECT_DIR$/displaybitmapefficiently" />
-            <option value="$PROJECT_DIR$/implicitintentdemo" />
-            <option value="$PROJECT_DIR$/layoutinflaterdemo" />
-            <option value="$PROJECT_DIR$/loadermanagerdemo" />
-            <option value="$PROJECT_DIR$/locationandmaps" />
-            <option value="$PROJECT_DIR$/multimedia" />
-            <option value="$PROJECT_DIR$/mynavigation" />
-            <option value="$PROJECT_DIR$/notifytheuser" />
-            <option value="$PROJECT_DIR$/okhttpdemo" />
-            <option value="$PROJECT_DIR$/okhttpntlm" />
-            <option value="$PROJECT_DIR$/receivefromotherapp" />
-            <option value="$PROJECT_DIR$/retrofitdemo" />
-            <option value="$PROJECT_DIR$/savingdata" />
-            <option value="$PROJECT_DIR$/sharefiles" />
-            <option value="$PROJECT_DIR$/sharefilesclient" />
-            <option value="$PROJECT_DIR$/viewpagedot" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

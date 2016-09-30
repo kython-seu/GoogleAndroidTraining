@@ -4,26 +4,33 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" filepath="$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" filepath="$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/databasedemo/databasedemo.iml" filepath="$PROJECT_DIR$/databasedemo/databasedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/deleteapplicationdemo/deleteapplicationdemo.iml" filepath="$PROJECT_DIR$/deleteapplicationdemo/deleteapplicationdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/devicepolicymanagerdemo/devicepolicymanagerdemo.iml" filepath="$PROJECT_DIR$/devicepolicymanagerdemo/devicepolicymanagerdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" filepath="$PROJECT_DIR$/displaybitmapefficiently/displaybitmapefficiently.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handlerthreadvshandler/handlerthreadvshandler.iml" filepath="$PROJECT_DIR$/handlerthreadvshandler/handlerthreadvshandler.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicitintentdemo/implicitintentdemo.iml" filepath="$PROJECT_DIR$/implicitintentdemo/implicitintentdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/layoutinflaterdemo/layoutinflaterdemo.iml" filepath="$PROJECT_DIR$/layoutinflaterdemo/layoutinflaterdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/loadermanagerdemo/loadermanagerdemo.iml" filepath="$PROJECT_DIR$/loadermanagerdemo/loadermanagerdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/locationandmaps/locationandmaps.iml" filepath="$PROJECT_DIR$/locationandmaps/locationandmaps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lrucachedemo/lrucachedemo.iml" filepath="$PROJECT_DIR$/lrucachedemo/lrucachedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/multimedia/multimedia.iml" filepath="$PROJECT_DIR$/multimedia/multimedia.iml" />
       <module fileurl="file://$PROJECT_DIR$/mynavigation/mynavigation.iml" filepath="$PROJECT_DIR$/mynavigation/mynavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/notifytheuser/notifytheuser.iml" filepath="$PROJECT_DIR$/notifytheuser/notifytheuser.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" filepath="$PROJECT_DIR$/okhttpdemo/okhttpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpntlm/okhttpntlm.iml" filepath="$PROJECT_DIR$/okhttpntlm/okhttpntlm.iml" />
       <module fileurl="file://$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" filepath="$PROJECT_DIR$/receivefromotherapp/receivefromotherapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" filepath="$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/savingdata/savingdata.iml" filepath="$PROJECT_DIR$/savingdata/savingdata.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharefiles/sharefiles.iml" filepath="$PROJECT_DIR$/sharefiles/sharefiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" filepath="$PROJECT_DIR$/sharefilesclient/sharefilesclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tablayoutdemo/tablayoutdemo.iml" filepath="$PROJECT_DIR$/tablayoutdemo/tablayoutdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewpagedot/viewpagedot.iml" filepath="$PROJECT_DIR$/viewpagedot/viewpagedot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volleydemo/volleydemo.iml" filepath="$PROJECT_DIR$/volleydemo/volleydemo.iml" />
     </modules>
   </component>
 </project>
