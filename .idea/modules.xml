@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/GoogleAndroidTraining.iml" filepath="$PROJECT_DIR$/GoogleAndroidTraining.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/canvas_2d_demo/canvas_2d_demo.iml" filepath="$PROJECT_DIR$/canvas_2d_demo/canvas_2d_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" filepath="$PROJECT_DIR$/customcontentproviderdemo/customcontentproviderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" filepath="$PROJECT_DIR$/customcontentproviderdemoclient/customcontentproviderdemoclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/databasedemo/databasedemo.iml" filepath="$PROJECT_DIR$/databasedemo/databasedemo.iml" />
